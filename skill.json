@@ -1,0 +1,38 @@
+{
+  "name": "genpark-enterprise-autonomous-support-ticket-resolver-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Enterprise autonomous support ticket resolver orchestrating CRM actions, policy compliance, and deterministic API calls.",
+  "author": "genpark",
+  "category": "customer-support",
+  "tags": [
+    "yc-2026",
+    "autonomous-support",
+    "ticket-resolution",
+    "crm-automation",
+    "enterprise-agent"
+  ],
+  "inputs": {
+    "support_ticket_text": {
+      "type": "string"
+    },
+    "crm_integration": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "resolution_session_id": {
+      "type": "string"
+    },
+    "root_cause_identified": {
+      "type": "string"
+    },
+    "deterministic_policy_compliance_passed": {
+      "type": "boolean"
+    },
+    "audit_trace_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
